@@ -1,0 +1,674 @@
+
+RadioPod_c_x32A4u.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         000004da  00000000  00000000  00000074  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .data         00000000  00802000  000004da  0000054e  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .comment      00000030  00000000  00000000  0000054e  2**0
+                  CONTENTS, READONLY
+  3 .debug_aranges 000000a8  00000000  00000000  0000057e  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  4 .debug_info   00000cc8  00000000  00000000  00000626  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_abbrev 000003f2  00000000  00000000  000012ee  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_line   0000045f  00000000  00000000  000016e0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_frame  000001e4  00000000  00000000  00001b40  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_str    0000059b  00000000  00000000  00001d24  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_loc    0000067c  00000000  00000000  000022bf  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_ranges 00000088  00000000  00000000  0000293b  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 fe 00 	jmp	0x1fc	; 0x1fc <__ctors_end>
+   4:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+   8:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+   c:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+  10:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+  14:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+  18:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+  1c:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+  20:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+  24:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+  28:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+  2c:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+  30:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+  34:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+  38:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+  3c:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+  40:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+  44:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+  48:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+  4c:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+  50:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+  54:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+  58:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+  5c:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+  60:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+  64:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+  68:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+  6c:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+  70:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+  74:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+  78:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+  7c:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+  80:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+  84:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+  88:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+  8c:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+  90:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+  94:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+  98:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+  9c:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+  a0:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+  a4:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+  a8:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+  ac:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+  b0:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+  b4:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+  b8:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+  bc:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+  c0:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+  c4:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+  c8:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+  cc:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+  d0:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+  d4:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+  d8:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+  dc:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+  e0:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+  e4:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+  e8:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+  ec:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+  f0:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+  f4:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+  f8:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+  fc:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+ 100:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+ 104:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+ 108:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+ 10c:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+ 110:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+ 114:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+ 118:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+ 11c:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+ 120:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+ 124:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+ 128:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+ 12c:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+ 130:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+ 134:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+ 138:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+ 13c:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+ 140:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+ 144:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+ 148:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+ 14c:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+ 150:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+ 154:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+ 158:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+ 15c:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+ 160:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+ 164:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+ 168:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+ 16c:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+ 170:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+ 174:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+ 178:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+ 17c:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+ 180:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+ 184:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+ 188:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+ 18c:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+ 190:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+ 194:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+ 198:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+ 19c:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+ 1a0:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+ 1a4:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+ 1a8:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+ 1ac:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+ 1b0:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+ 1b4:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+ 1b8:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+ 1bc:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+ 1c0:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+ 1c4:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+ 1c8:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+ 1cc:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+ 1d0:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+ 1d4:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+ 1d8:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+ 1dc:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+ 1e0:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+ 1e4:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+ 1e8:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+ 1ec:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+ 1f0:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+ 1f4:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+ 1f8:	0c 94 08 01 	jmp	0x210	; 0x210 <__bad_interrupt>
+
+000001fc <__ctors_end>:
+ 1fc:	11 24       	eor	r1, r1
+ 1fe:	1f be       	out	0x3f, r1	; 63
+ 200:	cf ef       	ldi	r28, 0xFF	; 255
+ 202:	cd bf       	out	0x3d, r28	; 61
+ 204:	df e2       	ldi	r29, 0x2F	; 47
+ 206:	de bf       	out	0x3e, r29	; 62
+ 208:	0e 94 3a 02 	call	0x474	; 0x474 <main>
+ 20c:	0c 94 6b 02 	jmp	0x4d6	; 0x4d6 <_exit>
+
+00000210 <__bad_interrupt>:
+ 210:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+00000214 <MCP2515_reg_write>:
+void MCP2515_init_Rx();
+uint8_t MCP2515_check_receive_status();
+
+
+void MCP2515_reg_write(uint8_t reg_address, uint8_t reg_value)
+{
+ 214:	0f 93       	push	r16
+ 216:	1f 93       	push	r17
+ 218:	cf 93       	push	r28
+ 21a:	df 93       	push	r29
+ 21c:	08 2f       	mov	r16, r24
+ 21e:	16 2f       	mov	r17, r22
+	MCP2515_PORT_CS &= ~(1<<MCP2515_PIN_CS);			//unset CS so MCP2515 knows we are talking
+ 220:	c4 e4       	ldi	r28, 0x44	; 68
+ 222:	d6 e0       	ldi	r29, 0x06	; 6
+ 224:	88 81       	ld	r24, Y
+ 226:	8f 7e       	andi	r24, 0xEF	; 239
+ 228:	88 83       	st	Y, r24
+	spi_send_byte( MCP2515_WRITE);
+ 22a:	82 e0       	ldi	r24, 0x02	; 2
+ 22c:	90 e0       	ldi	r25, 0x00	; 0
+ 22e:	0e 94 30 02 	call	0x460	; 0x460 <spi_send_byte>
+	spi_send_byte( reg_address);
+ 232:	80 2f       	mov	r24, r16
+ 234:	90 e0       	ldi	r25, 0x00	; 0
+ 236:	0e 94 30 02 	call	0x460	; 0x460 <spi_send_byte>
+	spi_send_byte( reg_value);
+ 23a:	81 2f       	mov	r24, r17
+ 23c:	90 e0       	ldi	r25, 0x00	; 0
+ 23e:	0e 94 30 02 	call	0x460	; 0x460 <spi_send_byte>
+	MCP2515_PORT_CS |= (1<<MCP2515_PIN_CS);			//set the CS.
+ 242:	88 81       	ld	r24, Y
+ 244:	80 61       	ori	r24, 0x10	; 16
+ 246:	88 83       	st	Y, r24
+	//if(MCP2515_reg_read(reg_address) == reg_value)flash_LED(1,RED_LED);
+}
+ 248:	df 91       	pop	r29
+ 24a:	cf 91       	pop	r28
+ 24c:	1f 91       	pop	r17
+ 24e:	0f 91       	pop	r16
+ 250:	08 95       	ret
+
+00000252 <MCP2515_instruction>:
+
+void MCP2515_instruction(uint8_t instruction)
+{
+ 252:	cf 93       	push	r28
+ 254:	df 93       	push	r29
+	
+	MCP2515_PORT_CS &= ~(1<<MCP2515_PIN_CS);			//unset CS so MCP2515 knows we are talking
+ 256:	c4 e4       	ldi	r28, 0x44	; 68
+ 258:	d6 e0       	ldi	r29, 0x06	; 6
+ 25a:	98 81       	ld	r25, Y
+ 25c:	9f 7e       	andi	r25, 0xEF	; 239
+ 25e:	98 83       	st	Y, r25
+	spi_send_byte( instruction);
+ 260:	90 e0       	ldi	r25, 0x00	; 0
+ 262:	0e 94 30 02 	call	0x460	; 0x460 <spi_send_byte>
+	MCP2515_PORT_CS |= (1<<MCP2515_PIN_CS);			//set the CS.
+ 266:	88 81       	ld	r24, Y
+ 268:	80 61       	ori	r24, 0x10	; 16
+ 26a:	88 83       	st	Y, r24
+}
+ 26c:	df 91       	pop	r29
+ 26e:	cf 91       	pop	r28
+ 270:	08 95       	ret
+
+00000272 <MCP2515_bit_modify>:
+
+void MCP2515_bit_modify(uint8_t reg_address, uint8_t reg_value, uint8_t reg_mask)
+{
+ 272:	ff 92       	push	r15
+ 274:	0f 93       	push	r16
+ 276:	1f 93       	push	r17
+ 278:	cf 93       	push	r28
+ 27a:	df 93       	push	r29
+ 27c:	f8 2e       	mov	r15, r24
+ 27e:	16 2f       	mov	r17, r22
+ 280:	04 2f       	mov	r16, r20
+	MCP2515_PORT_CS &= ~(1<<MCP2515_PIN_CS);			//unset CS so MCP2515 knows we are talking
+ 282:	c4 e4       	ldi	r28, 0x44	; 68
+ 284:	d6 e0       	ldi	r29, 0x06	; 6
+ 286:	88 81       	ld	r24, Y
+ 288:	8f 7e       	andi	r24, 0xEF	; 239
+ 28a:	88 83       	st	Y, r24
+	spi_send_byte( MCP2515_BITMODIFY);		//send instruction of bitmodify
+ 28c:	85 e0       	ldi	r24, 0x05	; 5
+ 28e:	90 e0       	ldi	r25, 0x00	; 0
+ 290:	0e 94 30 02 	call	0x460	; 0x460 <spi_send_byte>
+	spi_send_byte( reg_address);				//send address
+ 294:	8f 2d       	mov	r24, r15
+ 296:	90 e0       	ldi	r25, 0x00	; 0
+ 298:	0e 94 30 02 	call	0x460	; 0x460 <spi_send_byte>
+	spi_send_byte( reg_mask);				//send the mask
+ 29c:	80 2f       	mov	r24, r16
+ 29e:	90 e0       	ldi	r25, 0x00	; 0
+ 2a0:	0e 94 30 02 	call	0x460	; 0x460 <spi_send_byte>
+	spi_send_byte( reg_value);				//send the data
+ 2a4:	81 2f       	mov	r24, r17
+ 2a6:	90 e0       	ldi	r25, 0x00	; 0
+ 2a8:	0e 94 30 02 	call	0x460	; 0x460 <spi_send_byte>
+	MCP2515_PORT_CS |= (1<<MCP2515_PIN_CS);			//set the CS.
+ 2ac:	88 81       	ld	r24, Y
+ 2ae:	80 61       	ori	r24, 0x10	; 16
+ 2b0:	88 83       	st	Y, r24
+}
+ 2b2:	df 91       	pop	r29
+ 2b4:	cf 91       	pop	r28
+ 2b6:	1f 91       	pop	r17
+ 2b8:	0f 91       	pop	r16
+ 2ba:	ff 90       	pop	r15
+ 2bc:	08 95       	ret
+
+000002be <MCP2515_tx>:
+	MCP2515_bit_modify(MCP2515_CANCTRL, 0x00, 0xE0);		//put the device into it's functional mode currently: normal, listen is 0x60
+	MCP2515_receive_status();
+}
+
+void MCP2515_tx(uint8_t identifier, uint8_t transmit_buffer, uint8_t device_id, uint8_t recipient, uint8_t type_code, uint8_t dlc, uint8_t * data)
+{
+ 2be:	cf 92       	push	r12
+ 2c0:	df 92       	push	r13
+ 2c2:	ef 92       	push	r14
+ 2c4:	ff 92       	push	r15
+ 2c6:	0f 93       	push	r16
+ 2c8:	1f 93       	push	r17
+ 2ca:	cf 93       	push	r28
+ 2cc:	df 93       	push	r29
+ 2ce:	18 2f       	mov	r17, r24
+ 2d0:	f6 2e       	mov	r15, r22
+ 2d2:	c4 2f       	mov	r28, r20
+ 2d4:	d2 2f       	mov	r29, r18
+	MCP2515_reg_write(transmit_buffer, 0x03);			//we shall set this to the highest priority so that it sends it immediately.
+ 2d6:	63 e0       	ldi	r22, 0x03	; 3
+ 2d8:	8f 2d       	mov	r24, r15
+ 2da:	0e 94 0a 01 	call	0x214	; 0x214 <MCP2515_reg_write>
+	identifier = identifier & 3;
+	MCP2515_reg_write(transmit_buffer+1, (identifier<<6)|(device_id>>3));	//device identifier bit and the  device ID
+ 2de:	12 95       	swap	r17
+ 2e0:	11 0f       	add	r17, r17
+ 2e2:	11 0f       	add	r17, r17
+ 2e4:	10 7c       	andi	r17, 0xC0	; 192
+ 2e6:	8c 2f       	mov	r24, r28
+ 2e8:	86 95       	lsr	r24
+ 2ea:	86 95       	lsr	r24
+ 2ec:	86 95       	lsr	r24
+ 2ee:	61 2f       	mov	r22, r17
+ 2f0:	68 2b       	or	r22, r24
+ 2f2:	81 e0       	ldi	r24, 0x01	; 1
+ 2f4:	8f 0d       	add	r24, r15
+ 2f6:	0e 94 0a 01 	call	0x214	; 0x214 <MCP2515_reg_write>
+
+	MCP2515_reg_write(transmit_buffer+2, (1<<3)|(device_id<<5)|(recipient>>8));
+ 2fa:	80 e2       	ldi	r24, 0x20	; 32
+ 2fc:	c8 9f       	mul	r28, r24
+ 2fe:	a0 01       	movw	r20, r0
+ 300:	11 24       	eor	r1, r1
+ 302:	64 2f       	mov	r22, r20
+ 304:	68 60       	ori	r22, 0x08	; 8
+ 306:	82 e0       	ldi	r24, 0x02	; 2
+ 308:	8f 0d       	add	r24, r15
+ 30a:	0e 94 0a 01 	call	0x214	; 0x214 <MCP2515_reg_write>
+
+	MCP2515_reg_write(transmit_buffer+3, recipient);			//works
+ 30e:	6d 2f       	mov	r22, r29
+ 310:	83 e0       	ldi	r24, 0x03	; 3
+ 312:	8f 0d       	add	r24, r15
+ 314:	0e 94 0a 01 	call	0x214	; 0x214 <MCP2515_reg_write>
+	MCP2515_reg_write(transmit_buffer+4, type_code);
+ 318:	60 2f       	mov	r22, r16
+ 31a:	84 e0       	ldi	r24, 0x04	; 4
+ 31c:	8f 0d       	add	r24, r15
+ 31e:	0e 94 0a 01 	call	0x214	; 0x214 <MCP2515_reg_write>
+	MCP2515_reg_write(transmit_buffer+5, dlc);
+ 322:	6e 2d       	mov	r22, r14
+ 324:	85 e0       	ldi	r24, 0x05	; 5
+ 326:	8f 0d       	add	r24, r15
+ 328:	0e 94 0a 01 	call	0x214	; 0x214 <MCP2515_reg_write>
+	for (uint8_t byteCount = 0; byteCount < dlc; byteCount++)
+ 32c:	ee 20       	and	r14, r14
+ 32e:	79 f0       	breq	.+30     	; 0x34e <MCP2515_tx+0x90>
+ 330:	cc 2d       	mov	r28, r12
+ 332:	dd 2d       	mov	r29, r13
+ 334:	16 e0       	ldi	r17, 0x06	; 6
+ 336:	1f 0d       	add	r17, r15
+ 338:	86 e0       	ldi	r24, 0x06	; 6
+ 33a:	8e 0d       	add	r24, r14
+ 33c:	e8 2e       	mov	r14, r24
+ 33e:	ef 0c       	add	r14, r15
+	{
+		MCP2515_reg_write(transmit_buffer+6+byteCount, *(data+byteCount));
+ 340:	69 91       	ld	r22, Y+
+ 342:	81 2f       	mov	r24, r17
+ 344:	0e 94 0a 01 	call	0x214	; 0x214 <MCP2515_reg_write>
+ 348:	1f 5f       	subi	r17, 0xFF	; 255
+	MCP2515_reg_write(transmit_buffer+2, (1<<3)|(device_id<<5)|(recipient>>8));
+
+	MCP2515_reg_write(transmit_buffer+3, recipient);			//works
+	MCP2515_reg_write(transmit_buffer+4, type_code);
+	MCP2515_reg_write(transmit_buffer+5, dlc);
+	for (uint8_t byteCount = 0; byteCount < dlc; byteCount++)
+ 34a:	1e 11       	cpse	r17, r14
+ 34c:	f9 cf       	rjmp	.-14     	; 0x340 <MCP2515_tx+0x82>
+	{
+		MCP2515_reg_write(transmit_buffer+6+byteCount, *(data+byteCount));
+	}
+	MCP2515_instruction(128|(1<<transmit_buffer));
+ 34e:	21 e0       	ldi	r18, 0x01	; 1
+ 350:	30 e0       	ldi	r19, 0x00	; 0
+ 352:	c9 01       	movw	r24, r18
+ 354:	02 c0       	rjmp	.+4      	; 0x35a <MCP2515_tx+0x9c>
+ 356:	88 0f       	add	r24, r24
+ 358:	99 1f       	adc	r25, r25
+ 35a:	fa 94       	dec	r15
+ 35c:	e2 f7       	brpl	.-8      	; 0x356 <MCP2515_tx+0x98>
+ 35e:	80 68       	ori	r24, 0x80	; 128
+ 360:	0e 94 29 01 	call	0x252	; 0x252 <MCP2515_instruction>
+
+}
+ 364:	df 91       	pop	r29
+ 366:	cf 91       	pop	r28
+ 368:	1f 91       	pop	r17
+ 36a:	0f 91       	pop	r16
+ 36c:	ff 90       	pop	r15
+ 36e:	ef 90       	pop	r14
+ 370:	df 90       	pop	r13
+ 372:	cf 90       	pop	r12
+ 374:	08 95       	ret
+
+00000376 <MCP2515_receive_status>:
+
+uint8_t MCP2515_receive_status()
+{
+ 376:	1f 93       	push	r17
+ 378:	cf 93       	push	r28
+ 37a:	df 93       	push	r29
+	uint8_t mcp2515_status[2];
+	MCP2515_PORT_CS &= ~(1<<MCP2515_PIN_CS);			//unset CS so MCP2515 knows we are talking
+ 37c:	c4 e4       	ldi	r28, 0x44	; 68
+ 37e:	d6 e0       	ldi	r29, 0x06	; 6
+ 380:	88 81       	ld	r24, Y
+ 382:	8f 7e       	andi	r24, 0xEF	; 239
+ 384:	88 83       	st	Y, r24
+	spi_send_byte( 0xA0);					//send retrieve status instruction
+ 386:	80 ea       	ldi	r24, 0xA0	; 160
+ 388:	90 e0       	ldi	r25, 0x00	; 0
+ 38a:	0e 94 30 02 	call	0x460	; 0x460 <spi_send_byte>
+	mcp2515_status[0] = spi_send_byte(0xFF);//send don't care bits while mcp2515 is retrieving data.
+ 38e:	8f ef       	ldi	r24, 0xFF	; 255
+ 390:	90 e0       	ldi	r25, 0x00	; 0
+ 392:	0e 94 30 02 	call	0x460	; 0x460 <spi_send_byte>
+ 396:	18 2f       	mov	r17, r24
+	mcp2515_status[1] = spi_send_byte(0xFF);//duplicate data is retrieved again. nothing to do with this second lot yet.
+ 398:	8f ef       	ldi	r24, 0xFF	; 255
+ 39a:	90 e0       	ldi	r25, 0x00	; 0
+ 39c:	0e 94 30 02 	call	0x460	; 0x460 <spi_send_byte>
+	MCP2515_PORT_CS |= (1<<MCP2515_PIN_CS);			//set the CS.
+ 3a0:	88 81       	ld	r24, Y
+ 3a2:	80 61       	ori	r24, 0x10	; 16
+ 3a4:	88 83       	st	Y, r24
+	return mcp2515_status[0];					//send it back for analysis.
+}
+ 3a6:	81 2f       	mov	r24, r17
+ 3a8:	df 91       	pop	r29
+ 3aa:	cf 91       	pop	r28
+ 3ac:	1f 91       	pop	r17
+ 3ae:	08 95       	ret
+
+000003b0 <MCP2515_init>:
+	spi_send_byte( reg_value);				//send the data
+	MCP2515_PORT_CS |= (1<<MCP2515_PIN_CS);			//set the CS.
+}
+
+void MCP2515_init()
+{
+ 3b0:	cf 93       	push	r28
+ 3b2:	df 93       	push	r29
+	
+	//MCP2515_PORT_RESET &= ~(1<<MCP2515_PIN_RESET);
+	//_delay_us(50);
+	//MCP2515_PORT_RESET |= (1<<MCP2515_PIN_RESET);
+
+	MCP2515_PORT_CS &= ~(1<<MCP2515_PIN_CS);			//unset CS so MCP2515 knows we are talking
+ 3b4:	c4 e4       	ldi	r28, 0x44	; 68
+ 3b6:	d6 e0       	ldi	r29, 0x06	; 6
+ 3b8:	88 81       	ld	r24, Y
+ 3ba:	8f 7e       	andi	r24, 0xEF	; 239
+ 3bc:	88 83       	st	Y, r24
+	spi_send_byte(MCP2515_RESET); //instead of hard reset, perform software rest.
+ 3be:	80 ec       	ldi	r24, 0xC0	; 192
+ 3c0:	90 e0       	ldi	r25, 0x00	; 0
+ 3c2:	0e 94 30 02 	call	0x460	; 0x460 <spi_send_byte>
+	MCP2515_PORT_CS |= (1<<MCP2515_PIN_CS);			//set the CS.
+ 3c6:	88 81       	ld	r24, Y
+ 3c8:	80 61       	ori	r24, 0x10	; 16
+ 3ca:	88 83       	st	Y, r24
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 3cc:	8f ee       	ldi	r24, 0xEF	; 239
+ 3ce:	90 e0       	ldi	r25, 0x00	; 0
+ 3d0:	01 97       	sbiw	r24, 0x01	; 1
+ 3d2:	f1 f7       	brne	.-4      	; 0x3d0 <MCP2515_init+0x20>
+ 3d4:	00 c0       	rjmp	.+0      	; 0x3d6 <MCP2515_init+0x26>
+ 3d6:	00 00       	nop
+	_delay_us(30);
+	
+	MCP2515_bit_modify(MCP2515_CANCTRL,128,0xE0);		//put the device into configuration mode.
+ 3d8:	40 ee       	ldi	r20, 0xE0	; 224
+ 3da:	60 e8       	ldi	r22, 0x80	; 128
+ 3dc:	8f e0       	ldi	r24, 0x0F	; 15
+ 3de:	0e 94 39 01 	call	0x272	; 0x272 <MCP2515_bit_modify>
+	MCP2515_reg_write(MCP2515_CNF1, 0x04);	//SJW = 0(1),BRP = 4(5)--> number in brackets is actual value, as mcp2515 adds 1.
+ 3e2:	64 e0       	ldi	r22, 0x04	; 4
+ 3e4:	8a e2       	ldi	r24, 0x2A	; 42
+ 3e6:	0e 94 0a 01 	call	0x214	; 0x214 <MCP2515_reg_write>
+	MCP2515_reg_write(MCP2515_CNF2, 0xCA);	//BTL = 1, SAM = 1, PHSEG1 = 001(2), PRSEG = 010 (3)
+ 3ea:	6a ec       	ldi	r22, 0xCA	; 202
+ 3ec:	89 e2       	ldi	r24, 0x29	; 41
+ 3ee:	0e 94 0a 01 	call	0x214	; 0x214 <MCP2515_reg_write>
+	MCP2515_reg_write(MCP2515_CNF3, 0x01);	//SOF = 0, WAKFIL = 0, PHSEG2 = 001(2).
+ 3f2:	61 e0       	ldi	r22, 0x01	; 1
+ 3f4:	88 e2       	ldi	r24, 0x28	; 40
+ 3f6:	0e 94 0a 01 	call	0x214	; 0x214 <MCP2515_reg_write>
+	MCP2515_reg_write(MCP2515_CANINTE, 0b00011111);	//enable interrupt in rx0, rx1, tx0, tx1, tx2.
+ 3fa:	6f e1       	ldi	r22, 0x1F	; 31
+ 3fc:	8b e2       	ldi	r24, 0x2B	; 43
+ 3fe:	0e 94 0a 01 	call	0x214	; 0x214 <MCP2515_reg_write>
+	MCP2515_reg_write(MCP2515_RTSCTRL, 0x01); //probably want to move this to a tx init function. eventually. if it aint broke don't fix it...
+ 402:	61 e0       	ldi	r22, 0x01	; 1
+ 404:	8d e0       	ldi	r24, 0x0D	; 13
+ 406:	0e 94 0a 01 	call	0x214	; 0x214 <MCP2515_reg_write>
+	//MCP2515_init_Rx();
+	MCP2515_bit_modify(MCP2515_CANCTRL, 0x00, 0xE0);		//put the device into it's functional mode currently: normal, listen is 0x60
+ 40a:	40 ee       	ldi	r20, 0xE0	; 224
+ 40c:	60 e0       	ldi	r22, 0x00	; 0
+ 40e:	8f e0       	ldi	r24, 0x0F	; 15
+ 410:	0e 94 39 01 	call	0x272	; 0x272 <MCP2515_bit_modify>
+	MCP2515_receive_status();
+ 414:	0e 94 bb 01 	call	0x376	; 0x376 <MCP2515_receive_status>
+}
+ 418:	df 91       	pop	r29
+ 41a:	cf 91       	pop	r28
+ 41c:	08 95       	ret
+
+0000041e <clock_init>:
+void clock_init()
+{
+	//CCP = CCP_IOREG_gc;						// disable register security for clock update
+	//CLK.CTRL = CLK_SCLKSEL_RC32M_gc;			// switch clock source to the PLL
+	// Configure clock to 32MHz
+	OSC.CTRL |= OSC_RC32MEN_bm | OSC_RC32KEN_bm;  /* Enable the internal 32MHz & 32KHz oscillators */
+ 41e:	e0 e5       	ldi	r30, 0x50	; 80
+ 420:	f0 e0       	ldi	r31, 0x00	; 0
+ 422:	80 81       	ld	r24, Z
+ 424:	86 60       	ori	r24, 0x06	; 6
+ 426:	80 83       	st	Z, r24
+	while(!(OSC.STATUS & OSC_RC32KRDY_bm));       /* Wait for 32Khz oscillator to stabilize */
+ 428:	81 81       	ldd	r24, Z+1	; 0x01
+ 42a:	82 ff       	sbrs	r24, 2
+ 42c:	fd cf       	rjmp	.-6      	; 0x428 <clock_init+0xa>
+	while(!(OSC.STATUS & OSC_RC32MRDY_bm));       /* Wait for 32MHz oscillator to stabilize */
+ 42e:	e0 e5       	ldi	r30, 0x50	; 80
+ 430:	f0 e0       	ldi	r31, 0x00	; 0
+ 432:	81 81       	ldd	r24, Z+1	; 0x01
+ 434:	81 ff       	sbrs	r24, 1
+ 436:	fd cf       	rjmp	.-6      	; 0x432 <clock_init+0x14>
+	DFLLRC32M.CTRL = DFLL_ENABLE_bm ;             /* Enable DFLL - defaults to calibrate against internal 32Khz clock */
+ 438:	81 e0       	ldi	r24, 0x01	; 1
+ 43a:	80 93 60 00 	sts	0x0060, r24
+	CCP = CCP_IOREG_gc;                           /* Disable register security for clock update */
+ 43e:	98 ed       	ldi	r25, 0xD8	; 216
+ 440:	94 bf       	out	0x34, r25	; 52
+	CLK.CTRL = CLK_SCLKSEL_RC32M_gc;              /* Switch to 32MHz clock */
+ 442:	80 93 40 00 	sts	0x0040, r24
+	OSC.CTRL &= ~OSC_RC2MEN_bm;                   /* Disable 2Mhz oscillator */
+ 446:	e0 e5       	ldi	r30, 0x50	; 80
+ 448:	f0 e0       	ldi	r31, 0x00	; 0
+ 44a:	80 81       	ld	r24, Z
+ 44c:	8e 7f       	andi	r24, 0xFE	; 254
+ 44e:	80 83       	st	Z, r24
+ 450:	08 95       	ret
+
+00000452 <spi_init>:
+}
+void spi_init()
+{
+	SPIC.CTRL = (1<<SPI_ENABLE_bp)|SPI_PRESCALER_DIV16_gc|(1<<SPI_MASTER_bp)|SPI_MODE_0_gc;	//enable SPI with ENABLE, MSB first, master mode, reads on leading edge, speed fosc/128 (due to 2x speed not set).
+ 452:	e0 ec       	ldi	r30, 0xC0	; 192
+ 454:	f8 e0       	ldi	r31, 0x08	; 8
+ 456:	81 e5       	ldi	r24, 0x51	; 81
+ 458:	80 83       	st	Z, r24
+	SPIC.DATA = 0x00;	//ensure the data register has nothing in it.
+ 45a:	13 82       	std	Z+3, r1	; 0x03
+	SPIC.INTCTRL = 0x00;
+ 45c:	11 82       	std	Z+1, r1	; 0x01
+ 45e:	08 95       	ret
+
+00000460 <spi_send_byte>:
+	//SPDR = 0x00;		//ensure data register has nothing in it
+}
+
+uint8_t spi_send_byte(uint8_t c )
+{
+	SPIC.DATA = c;					//write data to the transmission register. Writing to this initiates transmission.
+ 460:	e0 ec       	ldi	r30, 0xC0	; 192
+ 462:	f8 e0       	ldi	r31, 0x08	; 8
+ 464:	83 83       	std	Z+3, r24	; 0x03
+	while(!(SPIC.STATUS & SPI_IF_bm));		//wait for send to complete
+ 466:	82 81       	ldd	r24, Z+2	; 0x02
+ 468:	88 23       	and	r24, r24
+ 46a:	ec f7       	brge	.-6      	; 0x466 <spi_send_byte+0x6>
+	return SPIC.DATA;				//return any data that was shifted into this register upon transmission.
+ 46c:	e0 ec       	ldi	r30, 0xC0	; 192
+ 46e:	f8 e0       	ldi	r31, 0x08	; 8
+ 470:	83 81       	ldd	r24, Z+3	; 0x03
+}
+ 472:	08 95       	ret
+
+00000474 <main>:
+
+int main(void)
+{
+ 474:	cf 93       	push	r28
+ 476:	df 93       	push	r29
+ 478:	1f 92       	push	r1
+ 47a:	cd b7       	in	r28, 0x3d	; 61
+ 47c:	de b7       	in	r29, 0x3e	; 62
+	clock_init();
+ 47e:	0e 94 0f 02 	call	0x41e	; 0x41e <clock_init>
+	//PORTC_DIRCLR = (1<<PIN6_bp);
+	PORTC_DIR = (1<<PIN4_bp)|(1<<PIN5_bp)|(1<<PIN7_bp);
+ 482:	80 eb       	ldi	r24, 0xB0	; 176
+ 484:	80 93 40 06 	sts	0x0640, r24
+	//PORTC_OUT = 0b00010000;
+	
+	spi_init();
+ 488:	0e 94 29 02 	call	0x452	; 0x452 <spi_init>
+	//spi_send_byte(&MCP2515_SPI, 5);
+	
+	//PMIC.CTRL |= PMIC_MEDLVLEN_bm | PMIC_HILVLEN_bm | PMIC_LOLVLEN_bm;	//turn on all level of interrupts
+	//sei();
+	//_delay_ms(200);
+	MCP2515_init();
+ 48c:	0e 94 d8 01 	call	0x3b0	; 0x3b0 <MCP2515_init>
+	MCP2515_reg_write(MCP2515_CANINTF, 0b00011100);
+ 490:	6c e1       	ldi	r22, 0x1C	; 28
+ 492:	70 e0       	ldi	r23, 0x00	; 0
+ 494:	8c e2       	ldi	r24, 0x2C	; 44
+ 496:	90 e0       	ldi	r25, 0x00	; 0
+ 498:	0e 94 0a 01 	call	0x214	; 0x214 <MCP2515_reg_write>
+	uint8_t data = 0b10101010; 
+ 49c:	8a ea       	ldi	r24, 0xAA	; 170
+ 49e:	89 83       	std	Y+1, r24	; 0x01
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 4a0:	8f e3       	ldi	r24, 0x3F	; 63
+ 4a2:	9c e9       	ldi	r25, 0x9C	; 156
+ 4a4:	01 97       	sbiw	r24, 0x01	; 1
+ 4a6:	f1 f7       	brne	.-4      	; 0x4a4 <main+0x30>
+ 4a8:	00 c0       	rjmp	.+0      	; 0x4aa <main+0x36>
+ 4aa:	00 00       	nop
+		//PORTC_OUT ^= (1<<PIN2_bp);
+		//MCP2515_init();
+		//MCP2515_reg_read(MCP2515_CANCTRL);
+		_delay_ms(5);
+
+		MCP2515_receive_status();
+ 4ac:	0e 94 bb 01 	call	0x376	; 0x376 <MCP2515_receive_status>
+        MCP2515_tx(1,0,1,1,1,1,&data);
+ 4b0:	ce 01       	movw	r24, r28
+ 4b2:	01 96       	adiw	r24, 0x01	; 1
+ 4b4:	6c 01       	movw	r12, r24
+ 4b6:	ee 24       	eor	r14, r14
+ 4b8:	e3 94       	inc	r14
+ 4ba:	f1 2c       	mov	r15, r1
+ 4bc:	01 e0       	ldi	r16, 0x01	; 1
+ 4be:	10 e0       	ldi	r17, 0x00	; 0
+ 4c0:	21 e0       	ldi	r18, 0x01	; 1
+ 4c2:	30 e0       	ldi	r19, 0x00	; 0
+ 4c4:	41 e0       	ldi	r20, 0x01	; 1
+ 4c6:	50 e0       	ldi	r21, 0x00	; 0
+ 4c8:	60 e0       	ldi	r22, 0x00	; 0
+ 4ca:	70 e0       	ldi	r23, 0x00	; 0
+ 4cc:	81 e0       	ldi	r24, 0x01	; 1
+ 4ce:	90 e0       	ldi	r25, 0x00	; 0
+ 4d0:	0e 94 5f 01 	call	0x2be	; 0x2be <MCP2515_tx>
+ 4d4:	e5 cf       	rjmp	.-54     	; 0x4a0 <main+0x2c>
+
+000004d6 <_exit>:
+ 4d6:	f8 94       	cli
+
+000004d8 <__stop_program>:
+ 4d8:	ff cf       	rjmp	.-2      	; 0x4d8 <__stop_program>
